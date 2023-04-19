@@ -41,8 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01 CSharpBasics\Abstract_Interface.cs" />
+    <Compile Include="01 CSharpBasics\AdoDotNet.cs" />
+    <Compile Include="01 CSharpBasics\AsyncProg.cs" />
+    <Compile Include="01 CSharpBasics\Collections.cs" />
     <Compile Include="01 CSharpBasics\ClassObject.cs" />
     <Compile Include="01 CSharpBasics\Conditions.cs" />
+    <Compile Include="01 CSharpBasics\Delegate_Code.cs" />
     <Compile Include="01 CSharpBasics\ExceptionHandling.cs" />
     <Compile Include="01 CSharpBasics\loops.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

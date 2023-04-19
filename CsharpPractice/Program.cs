@@ -1,17 +1,21 @@
 ﻿using System;
 using CommonLibrary._01_CSharpBasics;
+//using AdoNetConsoleApplication;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection.Emit;
+using System.Threading;
+using static CommonLibrary._01_CSharpBasics.ParallelProg;
+//using System.Collections.Generic;
 
 
 namespace CsharpPractice
 {
     internal class Program
     {
-      
+
         static void Main(string[] args)
         {
             /* Conditions Code
@@ -113,11 +117,87 @@ namespace CsharpPractice
             //obj.classB();
 
 
-            ConstReadOnly obj = new ConstReadOnly();
-            Console.WriteLine(obj.str2);
-            Console.WriteLine(ConstReadOnly.str);
+            /*  ConstReadOnly obj = new ConstReadOnly();
+              Console.WriteLine(obj.str2);
+              Console.WriteLine(ConstReadOnly.str);
+              Console.ReadLine()*/
+            childClass obj = new childClass();
+            //obj.NameST = "Test";
+            //Console.WriteLine(obj.NameST);
+
+            //int n = Int32.Parse(Console.ReadLine());
+
+
+            /*childClass.newClass obj2 = new childClass.newClass(n);
+            obj2.getnum2();*/
+
+
+            //COLLECTIONS(GENERIC)
+
+            /*  List<int> listObj = new List<int>();
+              for(int i = 0; i < n; i++)
+              {
+                  int input = Int32.Parse(Console.ReadLine());
+                  listObj.Add(input);
+              }
+              foreach(int input in listObj)
+              {
+                  Console.WriteLine(input);
+              }*/
+
+            /*  List<StudentData> data_One = new List<StudentData>(){
+              new StudentData() {Id = 1, Name = "Umang"},
+              new StudentData() {Id = 2, Name = "Yash"},
+              new StudentData() {Id = 3, Name = "Kushal"},
+              new StudentData() {Id = 4, Name = "Ankit"},
+              new StudentData() {Id = 5, Name = "Ritik"}
+              };
+              foreach (StudentData data in data_One)
+              {
+                  Console.WriteLine(data.Id);
+                  Console.WriteLine(data.Name);
+              }*/
+
+            calculate obj2 = new calculate();
+            //int[] arr = new int[8] { 1, 6, 0, 7, 2, 0, 0, 1 };
+            /*  int[] arr = new int[8] {1,4,0,2,2,0,0,1};
+              int n  = obj2.func(arr);
+              int n2 = obj2.func2(arr);
+              Console.WriteLine(n);
+              int n3 = 0;
+              if (n2>9)
+              {
+                  while(n2 > 0)
+                  {
+                       n3 += n2%10;
+                      n2 /= 10;
+                  }
+              Console.WriteLine(n3);
+              }
+              else
+              {
+                  Console.WriteLine(n2);
+              }*/
+            //Program2.AdoCLass();
+            //CommonLibrary._01_CSharpBasics.AdoCLass();
+            /*dict obj5 = new dict();
+            obj5.getAll();*/
+            /*var arr = new int[]{ 1, 2,3};
+
+            try
+            {
+                Console.WriteLine(arr[10]);
+            }
+            finally { Console.WriteLine("Error"); }*/
+
+            /* Console.WriteLine("Main method started!");
+             AsyncAwait.SomeFunc();
+             Console.WriteLine("Main Method End!");*/
+
+            //ParallelProg.ParallelLoop();
+            int[][,] arr = new int [5][,];
             Console.ReadLine();
-        
-        } 
+
+        }
     }
 }
